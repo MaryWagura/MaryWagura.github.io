@@ -26,7 +26,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
 </div>
 
 <!-- Header -->
-<header class="w3-container w3-white w3-center"  style="padding:10px 16px">
+<header class="w3-container w3-white w3-center"  style="padding:128px 16px">
 <style>
 * {box-sizing: border-box;}
 body {font-family: Verdana, sans-serif;}
@@ -35,10 +35,44 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 200px;
+  max-width: 500px;
+
   position: relative;
   margin: auto;
 }
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+/* Position the "next button" to the right */
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+  }
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+ .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  }
 
 /* Caption text */
 .text {
@@ -101,25 +135,25 @@ img {vertical-align: middle;}
 <body>
 
 
+
 <div class="slideshow-container">
 
 <div class="mySlides fade">
-  <div class="numbertext">1 / 3</div>
-  <img src="donated.jpg" style="width:90%">
-
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">2 / 3</div>
-  <img src="pads.jpg" style="width:90%">
-
-</div>
-
-<div class="mySlides fade">
-  <div class="numbertext">3 / 3</div>
-  <img src="hygiene.jpg" style="width:90%">
+  <img src="donated.jpg" style="width:100%">
  
 </div>
+
+<div class="mySlides fade">
+  <img src="pads.jpg" style="width:100%">
+
+</div>
+
+<div class="mySlides fade">
+  <img src="hygiene.jpg" style="width:100%">
+  
+</div>
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
 
 </div>
 <br>
@@ -171,8 +205,8 @@ These tools include sanitary pads and rights-based reproductive health education
   </div>
 </div> 
 
-<div class="w3-container w3-black w3-center w3-opacity w3-padding-64">
-    <h1 class="w3-margin w3-xlarge">Quote of the day: live life</h1>
+<div class="w3-container w3-purple w3-center w3-opacity w3-padding-64">
+    <h1 class="w3-margin w3-xlarge">HELP GIRLS STEP INTO THEIR POTENTIAL. DONATE TODAY</h1>
 </div>
 
 <!-- Footer -->
@@ -217,7 +251,7 @@ function showSlides() {
   }
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
-  setTimeout(showSlides, 2000); // Change image every 2 seconds
+  setTimeout(showSlides, 5000); // Change image every 2 seconds
 }
 </script>
 
