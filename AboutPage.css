@@ -12,19 +12,7 @@
   float: left;
 }
 
-.column left
-{
-  padding-left: 10%;
-   width: 33%;
 
-}
-.column right {
-  width: 33%;
-}
-
-.column middle {
-  width: 33%;
-}
 @media (min-width: 600px) {
   .column {
     width: 50%;
