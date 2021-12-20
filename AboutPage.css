@@ -1,0 +1,28 @@
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.column {
+  float: left;
+}
+
+.column left
+{
+  padding-left: 10%;
+   width: 33%;
+
+}
+.column right {
+  width: 33%;
+}
+
+.column middle {
+  width: 33%;
+}
